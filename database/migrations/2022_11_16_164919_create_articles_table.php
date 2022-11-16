@@ -16,7 +16,7 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->id();
-            $table->string('Titulo', 20);
+            $table->string('title', 20);
             $table->string('picture');
             $table->dateTime('publication_date');
             $table->string('country');

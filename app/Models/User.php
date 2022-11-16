@@ -41,4 +41,28 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    //--Funciones de manejo de relaciones--
+    public function roles()
+    {
+        // Relacion ('User'/Usuaro) (Pertenece a muchos / muchos a muchos) ('Role'/Rol)
+        return $this->belongsToMany('App\Role', 'role_user', 'user_id', 'role_id');
+    }
+    //--Funciones de manejo de roles--
+    //Funcion 'Tiene algun rol'
+    public function hasAnyRoles($roles){
+        //Si el parametro $roles esta en la funcion roles como atributo 'name' retornar true
+        if($this->roles()->whereIn('name', $roles)->first()){
+            return true;
+        }
+        //...de lo contrario retornar false
+        return false;
+    }
+    //Si el parametro $roles esta en la funcion roles como atributo 'name' retornar true
+    public function hasRole($role){
+        if($this->roles()->where('name', $role)->first()){
+            return true;
+        }
+        //...de lo contrario retornar false
+        return false;
+    }
 }

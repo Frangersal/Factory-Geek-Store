@@ -16,7 +16,7 @@ class CreateCartsTable extends Migration
         Schema::create('carts', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->id();
-            $table->string('IdSession');
+            $table->string('id_session');
             $table->timestamps();
         });
     }
