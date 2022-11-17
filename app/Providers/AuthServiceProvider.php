@@ -25,6 +25,41 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        //Solo un usuario Admin y buyer pueden ser manejadores-usuarios
+        Gate::define(
+            'manage-users', function($user){
+            return $user->hasAnyRoles(['admin','buyer']);
+        });
+
+        //Solo un usuario Admin puede editar-usuarios
+        Gate::define(
+            'edit-users', function($user){
+            return $user->hasRole('admin');
+        });
+
+        //Solo un usuario Admin puede eliminar-usuarios
+        Gate::define(
+            'delete-users', function($user){
+            return $user->hasRole('admin');
+        });
+
+        //------------------ Acciones ------------------//
+
+        //Acciones exclusivas de Administrador
+        Gate::define(
+            'buyer-action', function($user){
+            return $user->hasRole('admin');
+        });
+
+        //Acciones exclusivas de buyer
+        Gate::define(
+            'admin-action', function($user){
+            return $user->hasRole('buyer');
+        });
+
+        //------------------ Acciones ------------------//
+        
+
+        
     }
 }

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ProductsOrders extends Model
+class ProductOrder extends Model
 {
     use HasFactory;
     //Proteccion la tabla'answers_options' de la vista de los usuarios finales

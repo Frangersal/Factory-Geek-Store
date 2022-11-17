@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Roles extends Model
+class Role extends Model
 {
     use HasFactory;
     //Proteccion la tabla'roles' de la vista de los usuarios finales

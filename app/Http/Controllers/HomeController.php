@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Gate;
+use App\Models\Role;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        //return view('home');
+        
+        //Iniciar como admin
+        if(Gate::denies('admin-action')) {
+            return view('admin');
+        }
+        if(Gate::denies('buyer-action')) {
+            return view('buyer');
+        }
     }
 }
