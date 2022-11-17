@@ -45,7 +45,7 @@ class User extends Authenticatable
     public function roles()
     {
         // Relacion ('User'/Usuaro) (Pertenece a muchos / muchos a muchos) ('Role'/Rol)
-        return $this->belongsToMany('App\Role', 'role_user', 'user_id', 'role_id');
+        return $this->belongsToMany('App\Models\Role', 'role_user', 'user_id', 'role_id');
     }
     //--Funciones de manejo de roles--
     //Funcion 'Tiene algun rol'
