@@ -35,4 +35,10 @@ class HomeController extends Controller
             return view('buyer');
         }
     }
+
+    public function maquetado()
+    { 
+        return view('maquetadotest'); 
+    }
+
 }
