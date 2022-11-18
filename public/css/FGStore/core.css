@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap'); 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 14px; 
+    /*font-family: 'Prompt', sans-serif;*/
+}
+:root {
+    --bg-blue-FGS: rgb(0, 0, 204);
+    --bg-blue-nav: linear-gradient(133deg, rgba(51,51,255,1) 0%, rgba(0,0,204,1) 100%);
+    --bg-blue-category: linear-gradient(180deg, rgba(5,0,29,1) 0%, rgba(15,10,73,1) 100%);
+}
+
+/* --- Botones del NAV --- */
+
+.nav-button {
+    width: 117.74px;
+    height: 50px;
+    border-radius: 31px;
+    background: rgba(14,9,69,0.4);
+    background-blend-mode: normal;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.3);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-button-avatar {
+    height: 25px;
+    border-radius: 17.5px;
+}
+.nav-button-text { 
+    width: 60%;
+    height: 30.65px;
+    color: #ffffff;
+    /*font-family: Inter;font-size: 14px;font-weight: 400;text-align: right;*/
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+/* --- Botones del NAV --- */

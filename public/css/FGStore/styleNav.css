@@ -1,0 +1,12 @@
+.bg-nav-top{
+    height: 15vh;
+    background: var(--bg-blue-nav);
+    
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-logo {
+    height: 10vh; 
+}

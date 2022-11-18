@@ -16,16 +16,47 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
+    <!-- Styles Bootstrap 5 -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- Styles FGStore -->
+    <link href="{{ asset('css/FGStore/core.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/FGStore/layout.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/FGStore/styleMain.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/FGStore/styleNav.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        
+        
+        <nav class="navbar navbar-expand-md navbar-light bg-nav-top shadow-sm sticky-top">
+            <!-- bg-white -->
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <img class="nav-logo" src="{{ asset('img/logo/FGStore_logo.png') }}"  alt="icono">
                 </a>
+                <div>
+                </div>
+                    <button class="nav-button-perfil nav-button " >
+                        <img class="nav-button-avatar" src="{{ asset('img/icons/icons8-favorite-50.png') }}"  alt="icono">
+                        <span class="nav-button-text">
+                            Perfil
+                        </span>
+                    </button>
+                    <button class="nav-button-perfil nav-button " >
+                        <img class="nav-button-avatar" src="{{ asset('img/icons/icons8-favorite-50.png') }}"  alt="icono">
+                        <span class="nav-button-text">
+                            Perfil
+                        </span>
+                    </button>
+                    <button class="nav-button-perfil nav-button " >
+                        <img class="nav-button-avatar" src="{{ asset('img/icons/icons8-favorite-50.png') }}"  alt="icono">
+                        <span class="nav-button-text">
+                            Perfil
+                        </span>
+                    </button>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -75,7 +106,8 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <!-- <main class="py-4"> -->
+        <main>
             @yield('content')
         </main>
     </div>

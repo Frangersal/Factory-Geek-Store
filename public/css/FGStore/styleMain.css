@@ -1,0 +1,21 @@
+.bg-category{
+    height: 9vh ;
+    background: var(--bg-blue-category);
+}
+.bg-carrussel{
+    height: 55vh ;
+    background-color: rgb(255, 0, 0);
+}
+.bg-brans{
+    height: 21vh ;
+    background-color: rgb(222, 222, 222);
+}
+.bg-offers{
+    height: 100vh ;
+    background-color: rgb(0, 26, 255);
+    background-image: url("../../img/img-00.jpg");
+}
+.bg-most-sell{
+    height: 100vh ;
+    background-color: rgb(222, 222, 222);
+}
