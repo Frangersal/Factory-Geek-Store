@@ -12,35 +12,18 @@
     --bg-blue-category: linear-gradient(180deg, rgba(5,0,29,1) 0%, rgba(15,10,73,1) 100%);
 }
 
-/* --- Botones del NAV --- */
+/* --- >> CENTRADO MAGICO! << --- */
+.center-father{
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.center-son{
+    width: 100%;
 
-.nav-button {
-    width: 117.74px;
-    height: 50px;
-    border-radius: 31px;
-    background: rgba(14,9,69,0.4);
-    background-blend-mode: normal;
-    box-shadow: 0px 0px 9px rgba(0,0,0,0.3);
-    border-width: 1px;
-    border-color: rgba(255, 255, 255, 0.0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.nav-button-avatar {
-    height: 25px;
-    border-radius: 17.5px;
+input:focus{
+    outline: none;
 }
-.nav-button-text { 
-    width: 60%;
-    height: 30.65px;
-    color: #ffffff;
-    /*font-family: Inter;font-size: 14px;font-weight: 400;text-align: right;*/
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-/* --- Botones del NAV --- */
+

@@ -10,3 +10,108 @@
 .nav-logo {
     height: 10vh; 
 }
+/* --- Botones del NAV --- */
+
+.nav-button {
+    margin: .3rem;
+    padding: .7rem;
+    width: 117.74px;
+    height: 40px;
+    border-radius: 31px;
+    background: rgba(14,9,69,0.4);
+    background-blend-mode: normal;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.3);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-button-avatar {
+    height: 25px;
+    border-radius: 17.5px;
+}
+.nav-button-text { 
+    width: 60%;
+    height: 30.65px;
+    color: #ffffff;
+    /*font-family: Inter;font-size: 14px;font-weight: 400;text-align: right;*/
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+/* --- Botones del NAV --- */
+/* -- Barra de busqueda -- */
+.nav-search-section{
+    width: 573px;
+    
+}
+.nav-serch-bar[type=text] { 
+    display: inline-block;
+    
+    padding-left: 1rem;
+    margin: 0;
+    width: 80%;
+    height: 40px;
+    border-radius: 31px 0px 0px 31px;
+    background: rgba(255,255,255,0.4);
+    background-blend-mode: normal;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.29);
+    
+    /*border-width: 1px;*/
+    border-color: rgba(255, 255, 255, 0.0);
+    
+}
+.nav-serch-bar[type=text]:focus { 
+    
+  border: 3px solid rgba(255,255,255,0.4);
+    
+}
+
+.nav-serch-bar-buttton{
+    
+    display: inline-block;
+    width: 19%;
+    height: 40px;
+    margin: 0;
+    border-radius: 0px 31px 31px 0px;
+    background: rgba(255,255,255,0.4);
+    background-blend-mode: normal;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.29);
+    
+    /*border-width: 1px;*/
+    border-color: rgba(255, 255, 255, 0.0);
+    
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.nav-serch-bar-buttton:hover { 
+    
+    background: rgba(255,255,255,0.4);
+    border: 3px solid rgba(255,255,255,0.4);
+    
+}  
+.nav-serch-bar-buttton:active { 
+    
+    background: rgba(14,9,69,0.4);
+    border: 3px solid rgba(2, 192, 28, 0.4);
+    
+}
+.nav-serch-bar-buttton:focus { 
+    
+    background: rgba(255,255,255,0.4);
+    border: 3px solid rgba(255,255,255,0.4);
+    
+}
+.cqlch{ /*centrate que la chingada xd*/
+    margin: 1rem;
+}
+.nav-serch-bar-icon { 
+    width: 33px;
+    height: 33px; 
+}
+  

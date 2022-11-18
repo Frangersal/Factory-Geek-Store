@@ -34,42 +34,46 @@
             <!-- bg-white -->
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                <img class="nav-logo" src="{{ asset('img/logo/FGStore_logo.png') }}"  alt="icono">
-                </a>
-                <div>
-                </div>
-                    <button class="nav-button-perfil nav-button " >
-                        <img class="nav-button-avatar" src="{{ asset('img/icons/icons8-favorite-50.png') }}"  alt="icono">
-                        <span class="nav-button-text">
-                            Perfil
-                        </span>
-                    </button>
-                    <button class="nav-button-perfil nav-button " >
-                        <img class="nav-button-avatar" src="{{ asset('img/icons/icons8-favorite-50.png') }}"  alt="icono">
-                        <span class="nav-button-text">
-                            Perfil
-                        </span>
-                    </button>
-                    <button class="nav-button-perfil nav-button " >
-                        <img class="nav-button-avatar" src="{{ asset('img/icons/icons8-favorite-50.png') }}"  alt="icono">
-                        <span class="nav-button-text">
-                            Perfil
-                        </span>
-                    </button>
+                    <img class="nav-logo" src="{{ asset('img/logo/FGStore_logo.png') }}"  alt="icono">
+                </a> 
+                    <div class="input-group mb-3 cqlch nav-search-section">
+                        <input type="text" class="nav-serch-bar" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn nav-serch-bar-buttton" type="button" id="button-addon2">
+                            <img class="nav-serch-bar-icon" src="{{ asset('img/icons/icons8-search-50.png') }}"  alt="icono">
+                        </button>
+                    </div> 
 
+                <button class="nav-button-perfil nav-button " >
+                    <img class="nav-button-avatar" src="{{ asset('img/testpersonas/el_negro.jpg') }}"  alt="icono">
+                    <span class="nav-button-text">
+                        Perfil
+                    </span>
+                </button>
+                <button class="nav-button-perfil nav-button " >
+                    <img class="nav-button-avatar" src="{{ asset('img/icons/icons8-favorite-50.png') }}"  alt="icono">
+                    <span class="nav-button-text">
+                        Wishlist
+                    </span>
+                </button>
+                <button class="nav-button-perfil nav-button " >
+                    <img class="nav-button-avatar" src="{{ asset('img/icons/icons8-shopping-cart-30.png') }}"  alt="icono">
+                    <span class="nav-button-text">
+                        Carrito
+                    </span>
+                </button>
+<!-- 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
+                     
                     <ul class="navbar-nav me-auto">
 
                     </ul>
-
-                    <!-- Right Side Of Navbar -->
+ 
                     <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
+                         
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -102,7 +106,7 @@
                             </li>
                         @endguest
                     </ul>
-                </div>
+                </div> -->
             </div>
         </nav>
 
