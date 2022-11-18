@@ -10,6 +10,10 @@
 .nav-logo {
     height: 10vh; 
 }
+.nav-logo-tiny {
+    height: 3rem; 
+    width: 3rem; 
+}
 /* --- Botones del NAV --- */
 
 .nav-button {
@@ -45,9 +49,23 @@
 }
 /* --- Botones del NAV --- */
 /* -- Barra de busqueda -- */
+@media only screen and (min-width: 1200px) {
 .nav-search-section{
-    width: 573px;
+    width: 400px;
     
+}
+}
+@media only screen and (max-width: 992px) {
+    .nav-logo{
+        display:none !important;
+        
+    }
+}
+@media only screen and (min-width: 993px) {
+    .nav-logo-tiny{
+        display:none !important;
+        
+    }
 }
 .nav-serch-bar[type=text] { 
     display: inline-block;
@@ -107,11 +125,24 @@
     border: 3px solid rgba(255,255,255,0.4);
     
 }
+
 .cqlch{ /*centrate que la chingada xd*/
     margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-serch-bar-icon { 
-    width: 33px;
-    height: 33px; 
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .nav-serch-bar-icon{
+        width: 1.5rem;
+        height: 1.5rem; 
+        
+    }
 }
   
