@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/carousel.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -166,6 +167,13 @@
         <main>
             @yield('content')
         </main>
+
+        <footer class="bg-footer center-father">
+            <a class="navbar-brand center-son" href="{{ url('/') }}">
+                <img class="nav-logo" src="{{ asset('img/logo/FGStore_logo.png') }}"  alt="icono">
+                <img class="nav-logo-tiny" src="{{ asset('img/logo/FGStore_logo_tiny.png') }}"  alt="icono">
+            </a> 
+        </footer>
     </div>
 </body>
 </html>
